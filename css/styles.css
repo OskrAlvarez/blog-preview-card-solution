@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+:root {
+  /* Colors */
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  /* Font */
+  --font-family: "Figtree", sans-serif;
+  --font-xs: 12px;
+  --font-sm: 14px;
+  --font-base: 16px;
+}
+
+*,*::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+  font-family: var(--font-family);
+  font-size: var(--font-base);
+  line-height: 1.5rem;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: var(--yellow);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: .95rem .95rem 0 .95rem;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.card {
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border: 1px solid #000;
+  box-shadow: 13px 10px 1px -5px #000;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.card-title {
+  cursor: pointer;
+  padding-top: .70rem;
+  padding-bottom: .90rem;
+  transition: color 500ms ease-in-out;
+}
+
+.card-title:hover {
+  color: var(--yellow);
+}
+
+.card-body {
+  padding: .35rem 1rem;
+}
+
+.image-container {
+  padding-bottom: 1rem;
+}
+
+.image-container img {
+  border-radius: 8px;
+}
+
+.badge {
+  padding: .5rem;
+  background-color: var(--yellow);
+  border-radius: 3px;
+  font-size: var(--font-xs);
+  line-height: 1rem;
+  font-weight: 700;
+}
+
+.card-date {
+  font-size: var(--font-xs);
+  font-weight: 500;
+  line-height: 1rem;
+  padding-top: 1rem;
+}
+
+.text-gray {
+  color: var(--gray-500);
+  font-size: var(--font-sm);
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.user-info {
+  padding: .70rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.username {
+  font-size: var(--font-sm);
+  line-height: 1rem;
+  font-weight: bolder;
+}
